@@ -145,14 +145,15 @@ class CustomAppBar {
 
             Expanded(child: Container()),
 
-            InkWell(
-              onTap: () {
+            FloatingActionButton(
+              elevation: 0.0,
+              backgroundColor: const Color(0xFFC32422),
+              onPressed: () {
                 ModalBottomSheet.primaryBottomSheet(context);
               },
-
               child: Image.asset("assets/more.png")
             ),
-            const SizedBox(width: 10),
+
         ]
       ),
     );
